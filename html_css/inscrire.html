@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creer Un Compte</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="join-container" style="height: auto; margin-top: 20px;">
+      <div class="join-header">
+        <header class="join-header">
+          <h1>RoChaT</h1>
+        </header>
+      <main class="join-main" style="background-color: var(--dark-color-a);">
+      <form class="form">
+        <p style="margin-bottom: 20px; font-size: bold;">Inscription</p>
+        <label for="firstname"></label>
+        <input
+          type="text"
+          id="firstname"
+          class="sign"
+          placeholder="Prenom"
+        /><br />
+        <label for="lastname"></label>
+        <input
+          type="text"
+          id="lastname"
+          class="sign"
+          placeholder="Nom"
+        /><br />
+        <label for="email"></label>
+        <input
+          type="email"
+          id="email"
+          class="sign"
+          placeholder=" Addresse Email"
+        /><br />
+        <label for="phonenumber"></label>
+        <input
+          type="number"
+          id="number"
+          class="sign"
+          placeholder="Numéro de téléphone"
+        /><br/>
+        <div class="password">
+          <label for="password"></label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Mot de Passe (min. 7 caracteres)"
+          />
+        </div>
+        <div class="password">
+            <label for="password"></label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Confirmer Mot de Passe"
+            />
+          </div>
+        </main>
+      </form>
+      <input class="btn" type="submit" value="S'inscrire">
+      <p  class="login-link" style="margin-top: 10px; text-align: center;">Déjà inscrit ? <a href="index.html"> Se connecter</a></p>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+

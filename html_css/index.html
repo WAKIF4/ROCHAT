@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>ROCHAT</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1>RoChaT</h1>
+			</header>
+			<main class="join-main">
+				<form action="profil.html"> <!-- action="profil.html"-->
+					<div class="form-control">
+						<label for="email">E-mail</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Enter e-mail.."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="password">Mot de Passe</label>
+						<input 
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Enter Password"
+							required
+						/>
+					</div>
+					<button type="submit" class="btn" name="login">Se Connecter</button>
+					<p class="login-link" style="margin-top: 10px; text-align: center;">Créer Nouveau Compte ? <a href="inscrire.html"> S'inscrire</a></p>
+				</form>
+			</main>
+		</div>
+
+
+		
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Votre Profil</title>
+</head>
+<body>
+    <div class="join-container">
+        <header class="join-header">
+            <h1 style="margin-right: 300px;">Votre Profil</h1>
+            <a href="index.html" class="btn" style="margin-left: 300px;">Quitter Profil</a>
+        </header>
+        <main class="join-main">
+            <form action="chat.html">
+                <div class="form-control">
+                    <table>
+                        <tr>
+                            <td>Nom</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Prenom</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td for="username1" id="username1">E-mail</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>telephone</td>
+                            <td></td>
+                          </tr>
+                    </table>
+                </div>
+                <label for="username">Saisissez votre nom préféré pour rejoindre le chat</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Entrer username..."
+							required
+						/>
+
+                <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="PHP">PHP</option>
+                        <option value="C#">C#</option>
+                        <option value="Ruby">Ruby</option>
+                        <option value="Java">Java</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Rejoindre Room</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js" 
+  integrity="sha512-/l6vieC+YxaZywUhmqs++8uF9DeMvJE61ua5g+UK0TuHZ4TkTgB1Gm1n0NiA86uEOM9JJ6JUwyR0hboKO0fCng==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
